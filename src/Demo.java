@@ -1,14 +1,17 @@
+import java.util.Scanner;
+
 public class Demo {
+    Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
-        System.out.println("test");
         Demo demo = new Demo();
+        demo.test();
     }
 
-    public void test(int a, String b) {
-
+    public void test(){
+        while (this.scanner.hasNextLine()) {
+            System.out.println(scanner.nextLine());
+            break;
+        }
     }
 
-    public void test(String a, int b) {
-
-    }
 }
